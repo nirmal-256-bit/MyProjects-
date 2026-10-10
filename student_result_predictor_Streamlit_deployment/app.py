@@ -19,10 +19,10 @@ def load_model():
     model_path = Path(__file__).resolve().parent / "model.pkl"
     return joblib.load(model_path)
     
-"""@st.cache_resource
-def load_model():
-    return joblib.load("model.pkl")
-"""
+#@st.cache_resource
+#def load_model():
+#    return joblib.load("model.pkl")
+
 
 
 bundle = load_model()
